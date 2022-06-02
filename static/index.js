@@ -1,5 +1,5 @@
 var date = new Date()
-let display_date= "Date:" + date.toLocaleDateString()
+let display_date= "Data: " + date.toLocaleDateString('pt-BR', {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric'})
 
 //Carregar o DOM HTML
 $(document).ready(function () {
@@ -44,9 +44,3 @@ $(function () {
         });
     });
 })
-
-// const weekDay = ["Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado", "Domingo"]
-// const month = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
-
-
-// display_date = `${weekDay[date.getDay() - 1]}, ${date.getDate()} ${month[date.getMonth()]} ${date.getFullYear()}`
